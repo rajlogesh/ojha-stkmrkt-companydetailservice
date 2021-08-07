@@ -1,0 +1,19 @@
+server:
+  port: 8081
+  
+spring:
+  profiles:
+    active:
+    - local
+    
+---
+
+spring:
+  profiles: local
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://localhost:3306/OJHA_DB
+    username: root
+    password: root
