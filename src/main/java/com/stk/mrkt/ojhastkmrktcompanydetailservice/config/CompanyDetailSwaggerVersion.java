@@ -14,7 +14,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
 @EnableSwagger2
-@ComponentScan(basePackages = { "com.stk.mrkt.com.stk.mrkt.ojhastkmrktcompanydetailservice" })
+@ComponentScan(basePackages = { "com.stk.mrkt.ojhastkmrktcompanydetailservice" })
 public class CompanyDetailSwaggerVersion {
 
 	@Bean

@@ -48,7 +48,9 @@ public class CompanyDetailsController {
 	public ResponseEntity<CompanyDetailsResponse> saveCompanyData(
 			@RequestHeader(required = false, value = "HTTP_AUTH_TOKEN") String jwtToken,
 			@ApiParam(name = "CompanyDetailsRequest", value = "Request Body", required = true) @RequestBody CompanyDetailsRequest request) {
+		logger.info("Company Detail started");
 		CompanyDetailsResponse response = service.saveComapanyDetails(request);
+		logger.info("Company Detail ended");
 		return ResponseEntity.ok(response);
 	}
 	
