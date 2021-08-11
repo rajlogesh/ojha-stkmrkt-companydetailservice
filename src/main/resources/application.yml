@@ -1,11 +1,24 @@
 server:
-  port: 8082
+  port: 8084
   
 spring:
+  jmx:
+    enabled: true
+  application:
+    name: ojha-stkmrkt-companydetailservice
+    version: 1.0
   profiles:
     active:
     - local
-    
+
+stockservice:
+  rest: 
+    timeout: 2000
+    readtimeout: 5000
+    resourceuri:
+      deletecompanystocks : /globalshares/ojha/stock/v1/delete/stock/cmpycde/{companycde}
+      healthcheck: /globalshares/ojha/stock/v1/healthcheck
+
 ---
 
 spring:
@@ -17,3 +30,12 @@ spring:
     url: jdbc:mysql://localhost:3306/OJHA_DB
     username: root
     password: root
+
+stockservice:
+  rest: 
+    baseuri: http://localhost:8083
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka
