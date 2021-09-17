@@ -1,4 +1,4 @@
-package com.stk.mrkt.ojhastkmrktcompanydetailservice.model;
+package com.stk.mrkt.ojhastkmrktcompanydetailservice.model.response;
 
 import lombok.Data;
 

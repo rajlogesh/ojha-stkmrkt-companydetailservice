@@ -1,6 +1,8 @@
 package com.stk.mrkt.ojhastkmrktcompanydetailservice.entity;
 
-import java.sql.Date;
+
+import java.math.BigDecimal;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -28,7 +30,7 @@ public class CompanyDetailsEntity {
 	private String companyCEO;
 	
 	@Column(name = "C_TRN_OVR")
-	private Double companyTurnover;
+	private BigDecimal companyTurnover;
 	
 	@Column(name = "C_WBSTE")
 	private String companyWebsite;
