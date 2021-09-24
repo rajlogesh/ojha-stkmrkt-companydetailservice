@@ -6,11 +6,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import com.stk.mrkt.ojhastkmrktcompanydetailservice.entity.CompanyDetailsEntity;
+import com.stk.mrkt.ojhastkmrktcompanydetailservice.model.StockDetailEntity;
+import com.stk.mrkt.ojhastkmrktcompanydetailservice.model.StockDetailResponse;
 import com.stk.mrkt.ojhastkmrktcompanydetailservice.model.request.CompanyDetailsRequest;
 import com.stk.mrkt.ojhastkmrktcompanydetailservice.model.response.CompanyDetail;
 import com.stk.mrkt.ojhastkmrktcompanydetailservice.model.response.StockDetails;
-import com.stk.mrkt.ojhastockdetailservice.model.StockDetailEntity;
-import com.stk.mrkt.ojhastockdetailservice.model.StockDetailResponse;
 
 public class CompanyDetailResponseMapper {
 

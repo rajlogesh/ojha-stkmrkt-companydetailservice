@@ -1,6 +1,6 @@
 package com.stk.mrkt.ojhastkmrktcompanydetailservice.client;
 
-import com.stk.mrkt.ojhastockdetailservice.model.StockDetailResponse;
+import com.stk.mrkt.ojhastkmrktcompanydetailservice.model.StockDetailResponse;
 
 public interface StockServiceClient {
 	public StockDetailResponse deleteStocksOfComapny(String companyCode);

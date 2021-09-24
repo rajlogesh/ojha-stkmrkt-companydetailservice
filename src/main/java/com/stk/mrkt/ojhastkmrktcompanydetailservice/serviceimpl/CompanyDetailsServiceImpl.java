@@ -12,14 +12,14 @@ import com.stk.mrkt.ojhastkmrktcompanydetailservice.constants.CompanyDetailConst
 import com.stk.mrkt.ojhastkmrktcompanydetailservice.dao.CompanyDetailsRepository;
 import com.stk.mrkt.ojhastkmrktcompanydetailservice.entity.CompanyDetailsEntity;
 import com.stk.mrkt.ojhastkmrktcompanydetailservice.exception.InputValidationException;
+import com.stk.mrkt.ojhastkmrktcompanydetailservice.model.StockDetailEntity;
+import com.stk.mrkt.ojhastkmrktcompanydetailservice.model.StockDetailResponse;
 import com.stk.mrkt.ojhastkmrktcompanydetailservice.model.request.CompanyDetailsRequest;
 import com.stk.mrkt.ojhastkmrktcompanydetailservice.model.response.CompanyDetail;
 import com.stk.mrkt.ojhastkmrktcompanydetailservice.model.response.CompanyDetailsResponse;
 import com.stk.mrkt.ojhastkmrktcompanydetailservice.service.CompanyDetailService;
 import com.stk.mrkt.ojhastkmrktcompanydetailservice.util.CompanyDetailResponseMapper;
 import com.stk.mrkt.ojhastkmrktcompanydetailservice.util.CompanyDetailsUtil;
-import com.stk.mrkt.ojhastockdetailservice.model.StockDetailEntity;
-import com.stk.mrkt.ojhastockdetailservice.model.StockDetailResponse;
 
 @Service
 public class CompanyDetailsServiceImpl implements CompanyDetailService {

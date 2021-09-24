@@ -1,6 +1,6 @@
 package com.stk.mrkt.ojhastkmrktcompanydetailservice.handler;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

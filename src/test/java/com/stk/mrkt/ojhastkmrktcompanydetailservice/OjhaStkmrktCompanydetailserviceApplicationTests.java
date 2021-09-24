@@ -1,13 +1,13 @@
-package com.stk.mrkt.ojhastkmrktcompanydetailservice;
-
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
-class OjhaStkmrktCompanydetailserviceApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
-}
+//package com.stk.mrkt.ojhastkmrktcompanydetailservice;
+//
+//import org.junit.jupiter.api.Test;
+//import org.springframework.boot.test.context.SpringBootTest;
+//
+//@SpringBootTest
+//class OjhaStkmrktCompanydetailserviceApplicationTests {
+//
+//	@Test
+//	void contextLoads() {
+//	}
+//
+//}

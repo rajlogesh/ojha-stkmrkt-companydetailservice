@@ -51,6 +51,7 @@ public class CompanyDetailsController {
 	@ApiOperation(value = SAVE_COMPANY_DETAILS_URI, notes = "This API stores the company details in  DB")
 	@ApiResponses(value = {
 			@ApiResponse(code = 200, message = "Save Company Data", response = CompanyDetailsResponse.class) })
+	@CrossOrigin(origins = "*", maxAge = 3600)
 	@PostMapping(SAVE_COMPANY_DETAILS_URI)
 	//@PreAuthorize("hasRole('ROLE_MODERATOR') or hasRole('ROLE_ADMIN')")
 	@ApiImplicitParams({
@@ -67,6 +68,7 @@ public class CompanyDetailsController {
 	@ApiOperation(value = SAVE_COMPANY_DETAILS_URI, notes = "This API stores the company details in  DB")
 	@ApiResponses(value = {
 			@ApiResponse(code = 200, message = "Save Company Data", response = CompanyDetailsResponse.class) })
+	@CrossOrigin(origins = "*", maxAge = 3600)
 	@PutMapping(SAVE_COMPANY_DETAILS_URI)
 	//@PreAuthorize("hasRole('ROLE_MODERATOR') or hasRole('ROLE_ADMIN')")
 	@ApiImplicitParams({
@@ -83,6 +85,7 @@ public class CompanyDetailsController {
 	@ApiOperation(value = DELETE_COMPANY_DETAILS_URI, notes = "This API deletes the company details from  DB")
 	@ApiResponses(value = {
 			@ApiResponse(code = 200, message = "Delete Company Data", response = CompanyDetailsResponse.class) })
+	@CrossOrigin(origins = "*", maxAge = 3600)
 	@DeleteMapping(value = DELETE_COMPANY_DETAILS_URI, produces = { MediaType.APPLICATION_JSON_VALUE,MediaType.TEXT_PLAIN_VALUE }, consumes = {
 			MediaType.APPLICATION_JSON_VALUE, MediaType.TEXT_PLAIN_VALUE })
 	//@PreAuthorize("hasRole('ROLE_MODERATOR') or hasRole('ROLE_ADMIN')")
@@ -98,6 +101,7 @@ public class CompanyDetailsController {
 	@ApiOperation(value = FETCH_COMPANY_DETAILS_URI, notes = "This API fetches the comapny details for the requested company code")
 	@ApiResponses(value = {
 			@ApiResponse(code = 200, message = "Get Company Data", response = CompanyDetailsResponse.class) })
+	@CrossOrigin(origins = "*", maxAge = 3600)
 	@GetMapping(value = FETCH_COMPANY_DETAILS_URI, produces = { MediaType.APPLICATION_JSON_VALUE,MediaType.TEXT_PLAIN_VALUE }, consumes = {
 			MediaType.APPLICATION_JSON_VALUE, MediaType.TEXT_PLAIN_VALUE })
 	//@PreAuthorize("hasRole('ROLE_USER') or hasRole('ROLE_MODERATOR') or hasRole('ROLE_ADMIN')")
@@ -113,6 +117,7 @@ public class CompanyDetailsController {
 	@ApiOperation(value = FETCHALL_COMPANY_DETAILS_URI, notes = "This API fetches all the registered company details")
 	@ApiResponses(value = {
 			@ApiResponse(code = 200, message = "Get all Company Data", response = CompanyDetailsResponse.class) })
+	@CrossOrigin(origins = "*", maxAge = 3600)
 	@GetMapping(value = FETCHALL_COMPANY_DETAILS_URI, produces = { MediaType.APPLICATION_JSON_VALUE,MediaType.TEXT_PLAIN_VALUE }, consumes = {
 			MediaType.APPLICATION_JSON_VALUE, MediaType.TEXT_PLAIN_VALUE })
 	//@PreAuthorize("hasRole('ROLE_USER') or hasRole('ROLE_MODERATOR') or hasRole('ROLE_ADMIN')")
@@ -127,6 +132,7 @@ public class CompanyDetailsController {
 	@ApiOperation(value = FETCH_COMPANY_STOCKS_BY_RANGE_URI, notes = "This API fetches the stock value of the requested company")
 	@ApiResponses(value = {
 			@ApiResponse(code = 200, message = "Delete Company Data", response = CompanyDetailsResponse.class) })
+	@CrossOrigin(origins = "*", maxAge = 3600)
 	@GetMapping(value = FETCH_COMPANY_STOCKS_BY_RANGE_URI, produces = { MediaType.APPLICATION_JSON_VALUE,MediaType.TEXT_PLAIN_VALUE }, consumes = {
 			MediaType.APPLICATION_JSON_VALUE, MediaType.TEXT_PLAIN_VALUE })
 	//@PreAuthorize("hasRole('ROLE_USER') or hasRole('ROLE_MODERATOR') or hasRole('ROLE_ADMIN')")

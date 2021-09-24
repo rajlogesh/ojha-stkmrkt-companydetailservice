@@ -30,36 +30,26 @@ spring:
     hibernate:
       ddl-auto: none
   datasource:
-    url: jdbc:mysql:/localhost:3306/OJHA_DB
-    username: root
-    password: root
-
-stockservice:
-  rest: 
-    baseuri: http://localhost:8083
-    
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8081/eureka
-      
----
-
-spring:
-  profiles: dev
-  jpa:
-    hibernate:
-      ddl-auto: none
-  datasource:
     url: jdbc:mysql://myfirstmysql.ciugtlhxortq.ap-south-1.rds.amazonaws.com:3306/OJHA_DB
     username: localuser
     password: Localuser123
 
 stockservice:
   rest: 
-    baseuri: http://localhost:8083
-    
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8081/eureka
+    baseuri: http://ojha-stock-api-alb-1846094403.ap-south-1.elb.amazonaws.com
+         
+#---
+#
+#spring:
+#  profiles: dev
+#  jpa:
+#    hibernate:
+#      ddl-auto: none
+#  datasource:
+#    url: jdbc:mysql://myfirstmysql.ciugtlhxortq.ap-south-1.rds.amazonaws.com:3306/OJHA_DB
+#    username: localuser
+#    password: Localuser123
+#
+#stockservice:
+#  rest: 
+#    baseuri: http://ojha-stocks-stock-api-alb-1109219725.ap-south-1.elb.amazonaws.com

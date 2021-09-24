@@ -20,9 +20,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.stk.mrkt.ojhastkmrktcompanydetailservice.client.StockServiceClient;
 import com.stk.mrkt.ojhastkmrktcompanydetailservice.constants.CompanyDetailConstants;
 import com.stk.mrkt.ojhastkmrktcompanydetailservice.exception.ClientServiceException;
+import com.stk.mrkt.ojhastkmrktcompanydetailservice.model.StockDetailResponse;
 import com.stk.mrkt.ojhastkmrktcompanydetailservice.model.response.ErrorResponse;
 import com.stk.mrkt.ojhastkmrktcompanydetailservice.util.CompanyDetailsUtil;
-import com.stk.mrkt.ojhastockdetailservice.model.StockDetailResponse;
 
 import lombok.extern.slf4j.Slf4j;
 
